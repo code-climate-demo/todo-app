@@ -1,0 +1,26 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+  fixme:
+    enabled: true
+    config:
+      strings:
+      - FIXME
+      - BUG
+  rubocop:
+    enabled: true
+    checks:
+      Rubocop/Lint/AssignmentInCondition:
+        enabled: false
+ratings:
+  paths:
+  - app/**
+  - lib/**
+  - "**.rb"
+  - "**.js"
+  - "**.lock"
+exclude_paths:
+- config/**/*
