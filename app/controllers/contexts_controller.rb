@@ -30,7 +30,7 @@ class ContextsController < ApplicationController
       format.autocomplete &render_autocomplete
     end
   end
-
+#FIXME
   def show
     set_context_from_params
 

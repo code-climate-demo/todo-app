@@ -1,5 +1,11 @@
 class TodosController < ApplicationController
 
+#FIXME - this class has alot of warnings.
+
+#TODO - Add time tracking to each task.
+
+
+
   skip_before_filter :login_required, :only => [:index, :tag]
   prepend_before_filter :login_or_feed_token_required, :only => [:index, :tag]
   append_before_filter :find_and_activate_ready, :only => [:index, :list_deferred]
@@ -55,7 +61,7 @@ class TodosController < ApplicationController
         @feed_title = 'Tracks Actions'.freeze
         @feed_description = "Actions for #{current_user.display_name}"
       end
-      format.ics
+      format.ics # FIXME
     end
   end
 

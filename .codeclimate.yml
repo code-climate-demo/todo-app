@@ -1,20 +1,25 @@
+---
 engines:
   duplication:
     enabled: true
     config:
       languages:
       - ruby
+      - javascript
   fixme:
     enabled: true
     config:
       strings:
       - FIXME
+      - TODO
       - BUG
   rubocop:
     enabled: true
     checks:
       Rubocop/Lint/AssignmentInCondition:
         enabled: false
+  phpcodesniffer:
+    enabled: true
 ratings:
   paths:
   - app/**
@@ -24,3 +29,4 @@ ratings:
   - "**.lock"
 exclude_paths:
 - config/**/*
+- ".codeclimate.yml"
