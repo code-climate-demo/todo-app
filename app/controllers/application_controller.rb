@@ -1,6 +1,8 @@
 require_dependency "login_system"
 require_dependency "tracks/source_view"
 
+# FIXME - This class needs to be fixed.
+
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
