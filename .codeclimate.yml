@@ -10,15 +10,18 @@ engines:
     enabled: true
     config:
       strings:
-      - FIXME
-      - TODO
-      - BUG
+      - HACK
+      - KLUDGE
+  brakeman:
+    enabled: true
   rubocop:
     enabled: true
     checks:
       Rubocop/Lint/AssignmentInCondition:
         enabled: false
-  phpcodesniffer:
+  bundler-audit:
+    enabled: true
+  reek:
     enabled: true
 ratings:
   paths:

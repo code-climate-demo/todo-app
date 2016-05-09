@@ -28,6 +28,7 @@ class DataController < ApplicationController
         return
       end
 
+      #TODO Fix security issues
       #save file for later
       begin
         uploaded_file = params[:file]

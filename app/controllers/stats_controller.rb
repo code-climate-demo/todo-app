@@ -11,6 +11,7 @@ class StatsController < ApplicationController
     @stats = Stats::UserStats.new(current_user)
   end
 
+
   def actions_done_last12months_data
     # get actions created and completed in the past 12+3 months. +3 for running
     # - outermost set of entries needed for these calculations
