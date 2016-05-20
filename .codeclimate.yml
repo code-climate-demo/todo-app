@@ -16,6 +16,13 @@ engines:
     enabled: true
   bundler-audit:
     enabled: true
+  rubocop:
+    enabled: true
+    checks:
+      Rubocop/Lint/AssignmentInCondition:
+        enabled: false
+  reek:
+    enabled: true
 ratings:
   paths:
   - app/**
