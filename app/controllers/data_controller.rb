@@ -29,6 +29,7 @@ class DataController < ApplicationController
       end
 
       #save file for later
+      # TODO - fix security problem
       begin
         uploaded_file = params[:file]
         @filename = Tracks::Utils.sanitize_filename(uploaded_file.original_filename)
